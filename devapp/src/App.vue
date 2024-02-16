@@ -15,8 +15,10 @@
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	height: 100%;	
 }
 
 * {
@@ -26,10 +28,11 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.6;
-	margin: 0;
+	margin: 0px;
+	padding: 0px;
 	min-height: 100vh;
 	background: linear-gradient(270deg, rgb(103, 151, 221) 0%, white 100%);
-
+	height: 40rem;
 }
 
 ul {
@@ -54,6 +57,8 @@ a {
 
 .main-nav {
 	margin-top: 5px;
+	display: flex;
+	flex-direction: column;
 }
 
 .logo a,
@@ -73,52 +78,22 @@ a {
 	color: #718daa;
 }
 
-
-
 .header {
-	padding-top: .5em;
-	padding-bottom: .5em;
-	border: 1px solid #a2a2a2;
-	background-color: #f4f4f4;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	width: 13%;
+	padding: 1%;
+	text-align: center;
+	border-top-right-radius: 5%;
+	border-bottom-right-radius: 5%;
+	margin-right: 1%;
 }
 
-
-/* ================================= 
-  Media Queries
-==================================== */
-
-
-
-
-@media (min-width: 769px) {
-
-	.header,
-	.main-nav {
-		display: flex;
-	}
-
-	.header {
-		flex-direction: column;
-		align-items: center;
-		width: 80%;
-		margin: 0 auto;
-		max-width: 100%;
-		margin-top: 1%;
-	}
-
+.header>*{
+	width: 100%;
 }
-
-@media (min-width: 1025px) {
-	.header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-}</style>
+</style>
 

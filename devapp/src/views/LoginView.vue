@@ -77,6 +77,8 @@ export default {
   align-items: center;
   text-align: left;
   height: 41rem;
+  flex: 1;
+  align-self: center;
 }
 
 #loginDiv>:nth-child(1){
